@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" href="../pages/script.css">
+  </head>
+  <body>
+    <h1>Hotel Room Booking</h1>
+    <form action="booking_confirmation.php" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="room_type">Room Type:</label>
+      <select id="room_type" name="room_type" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select><br><br>
+      <label for="room_number">Room Number:</label>
+      <input type="number" id="room_number" name="room_number" min="1" max="10" required><br><br>
+      <label for="start_time">Start Time:</label>
+      <input type="datetime-local" id="start_time" name="start_time" required><br><br>
+      <label for="end_time">End Time:</label>
+      <input type="datetime-local" id="end_time" name="end_time" required><br><br>
+      <label for="price">Price:</label>
+      <input type="text" id="price" name="price" disabled><br><br>
+      <input type="submit" value="Book Room">
+    </form>
+  </body>
+</html>
